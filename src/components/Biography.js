@@ -9,7 +9,7 @@ function Biography() {
         <div className="row gy-4 gy-md-0 align-items-center">
           <div className="col-12 col-md-6">
             <h1 className="fw-bold">
-              Je suis Valdès AGBOKONI Développeur et Designeur Web
+              Je suis Valdès AGBOKONI Développeur web et Designer graphique.
             </h1>
             <h2 className="fw-lighter">Bienvenue dans mon univers créatif</h2>
 
@@ -100,18 +100,18 @@ function Biography() {
                               href={link}
                               className="row text-black text-decoration-none"
                             >
-                              <div className="col-sm-1  col-2">
+                              <div className="col-sm-2 col-2">
                                 {cover ? (
                                   <img
                                     src={cover}
                                     alt={name}
-                                    className="w-100"
+                                    className="w-100 w-md-50"
                                   />
                                 ) : (
                                   <i className={icone}></i>
                                 )}
                               </div>
-                              <div className="col-sm-11  col-6">{name}</div>
+                              <div className="col-sm-9  col-6">{name}</div>
                             </a>
                           </li>
                         ))}

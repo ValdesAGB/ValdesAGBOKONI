@@ -5,7 +5,10 @@ function Header() {
     <header className="py-4">
       <nav className="navbar navbar-expand-md bg-light navbar-light fixed-top">
         <div className="container">
-          <a href="index.html" className="navbar-brand text-uppercase fw-bold">
+          <a
+            href="#valdesagbokoni"
+            className="navbar-brand text-uppercase fw-bold"
+          >
             <span className="bg-primary bg-gradient p-1 rounded-3 text-light">
               Valdès
             </span>{' '}
@@ -23,7 +26,7 @@ function Header() {
             <i className="bi bi-list"></i>
           </button>
           <div
-            className="collapse navbar-collapse justify-content-end"
+            className="collapse navbar-collapse justify-content-end fw-bold"
             id="navbarNav"
           >
             <ul className="navbar-nav">
