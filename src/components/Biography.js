@@ -100,18 +100,18 @@ function Biography() {
                               href={link}
                               className="row text-black text-decoration-none"
                             >
-                              <div className="col-sm-1  col-2">
+                              <div className="col-sm-2 col-3">
                                 {cover ? (
                                   <img
                                     src={cover}
                                     alt={name}
-                                    className="w-100"
+                                    className="w-50"
                                   />
                                 ) : (
                                   <i className={icone}></i>
                                 )}
                               </div>
-                              <div className="col-sm-11  col-6">{name}</div>
+                              <div className="col-sm-9  col-6">{name}</div>
                             </a>
                           </li>
                         ))}
