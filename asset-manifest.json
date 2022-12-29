@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/ValdesAGBOKONI/static/js/main.142c2938.js",
+    "main.js": "/ValdesAGBOKONI/static/js/main.184a0bbb.js",
     "static/media/BoostJob2.PNG": "/ValdesAGBOKONI/static/media/BoostJob2.6fb117af28e414b83827.PNG",
     "static/media/BoostJob3.PNG": "/ValdesAGBOKONI/static/media/BoostJob3.d74f2d98d805a828042a.PNG",
     "static/media/BoostJob1.PNG": "/ValdesAGBOKONI/static/media/BoostJob1.4243a9842242eec1526c.PNG",
@@ -28,9 +28,9 @@
     "static/media/grab-a-coffee.jpg": "/ValdesAGBOKONI/static/media/grab-a-coffee.de1711130488d2c60d3e.jpg",
     "static/media/IFEE4.PNG": "/ValdesAGBOKONI/static/media/IFEE4.f7fac40ecb8ff9139081.PNG",
     "index.html": "/ValdesAGBOKONI/index.html",
-    "main.142c2938.js.map": "/ValdesAGBOKONI/static/js/main.142c2938.js.map"
+    "main.184a0bbb.js.map": "/ValdesAGBOKONI/static/js/main.184a0bbb.js.map"
   },
   "entrypoints": [
-    "static/js/main.142c2938.js"
+    "static/js/main.184a0bbb.js"
   ]
 }
