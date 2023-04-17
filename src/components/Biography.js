@@ -53,24 +53,25 @@ function Biography() {
                   >
                     <p>Bienvenue à vous .</p>
                     <p>
-                      Moi c'est AGBOKONI Valdès, diplômé de l'Ecole
-                      Internationale de Graphisme du Bénin ( EIG-Bénin ) en
-                      développement web et détenteur d'une licence 1 en génie
-                      logiciel à l'Institut de Formation et de Recherche en
-                      Informatique ( IFRI ) de l'UAC.
+                      Je suis AGBOKONI Valdès, diplômé en développement web de
+                      l'École Internationale de Graphisme du Bénin (EIG-Bénin)
+                      et titulaire d'une licence 1 en génie logiciel de
+                      l'Institut de Formation et de Recherche en Informatique
+                      (IFRI) de l'UAC. J’ai aussi des compétences en graphisme :
+                      retouche photo, manipulation d’images, et conception de
+                      logos.
                     </p>
                     <p>
-                      Aussi, je suis détenteur d'une attestation de formation en
-                      graphisme ( une formation d'initiation aux outils
-                      Photoshop et Illustrator ) de l'EIG-Bénin. Je suis
-                      développeur web et j'ai aussi des compétences en retouche
-                      photo / images et en conception de logo.
+                      Je serai ravi de mettre à votre disposition, les années
+                      d'expérience et l'expertise que j’ai acquise dans le
+                      domaine du développement web pour tous projets de création
+                      de site web selon le but de ce dernier. Dans le domaine du
+                      graphisme, je ne prétends pas être un expert, mais j'ai
+                      acquis suffisamment de compétences pour vous offrir les
+                      services suivants :
                     </p>
-                    En ce qui concerne le Graphisme, je n'en suis pas un expert
-                    mais j'ai suffisamment de compétences pour vous offrir les
-                    services suivant :
                     <div>
-                      *Pour ce qui est de Photoshop :
+                      *Photoshop :
                       <ul>
                         {Photoshop.map((element, index) => (
                           <li key={`${element} - ${index}`}>{element}</li>
@@ -78,7 +79,7 @@ function Biography() {
                       </ul>
                     </div>
                     <div>
-                      *Pour ce qui est d'Illustrator :
+                      *Illustrator :
                       <ul>
                         {Illustrator.map((element, index) => (
                           <li key={`${element} - ${index}`}>{element}</li>
@@ -86,9 +87,9 @@ function Biography() {
                       </ul>
                     </div>
                     <p>
-                      Je continue à m'améliorer dans ce domaine de jours en
-                      jours donc je pourrai vous offrir des prestations de
-                      qualités auxquelles vous ne vous attendez pas.
+                      Je continue à perfectionner mes compétences jour après
+                      jour, afin de vous offrir des prestations de qualité qui
+                      dépasseront vos attentes.
                     </p>
                     ---------------------------------------------------------------------
                     <div>

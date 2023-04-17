@@ -51,13 +51,12 @@ function Footer() {
                       ></button>
                     </div>
                     <div
-                      className="modal-body"
+                      className="modal-body text-center"
                       style={{
                         fontFamily: 'Sitka Subheading',
                       }}
                     >
-                      Ce site est onepage et conçu avec React Js. Merci pour
-                      votre visite. 😘.
+                      Merci pour votre visite. 😘.
                     </div>
                   </div>
                 </div>
@@ -88,7 +87,7 @@ function Footer() {
           </div>
         </div>
         <div className="text-center text-black-50">
-          ValdesAGBOKONI, Tous droits réservés &copy; {date.getFullYear()}
+          ValdèsAGBOKONI, Tous droits réservés &copy; {date.getFullYear()}
         </div>
       </div>
     </footer>

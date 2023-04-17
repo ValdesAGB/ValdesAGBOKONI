@@ -23,14 +23,14 @@ import HandyMan2 from '../assets/HandyMan2.PNG'
 import Suivi from '../assets/Suivi.PNG'
 
 export const Photoshop = [
-  ' Faire disparaitre une imperfection de visage ( par exemple ), sur un de vos portrait ; ',
-  " Faire un détourage : c'est à dire, retirer un élément en particulier sur une image ou vous donnez accès à ce dernier afin que vous puissiez le réutiliser à d'autres fins ;",
-  ' Modifié un texte sur une image .',
+  'Retouche de portraits pour éliminer les imperfections du visage ; ',
+  "Détourage d'éléments spécifiques sur une image pour une réutilisation ultérieure ;",
+  'Modification de texte sur une image.',
 ]
 
 export const Illustrator = [
-  " Je peux vous apporter des corrections minimes ou des retouches sur un de vos logos ou autres qu'un expert vous aurait facturé un peu plus cher;",
-  ' Je peux vous construire des logos de bases ou des logos dont vous avez peut-être déjà une idée ou même un exemplaire',
+  " Corrections mineures et retouches de logos ou autres créations, à un coût inférieur à celui d'un expert ;",
+  ' Création de logo simple à partir de vos idées ou exemples existants.',
 ]
 
 export const Networks = [
@@ -39,14 +39,6 @@ export const Networks = [
     name: 'ComeUp',
     link: 'https://comeup.com/profil/valdesagb',
     cover: 'https://comeup.com/favicon.png',
-  },
-
-  {
-    id: 'Fiverr-23',
-    name: 'Fiverr',
-    link: 'https://fr.fiverr.com/valdesagbokoni?up_rollout=true',
-    cover:
-      'https://user-images.githubusercontent.com/70473461/92360592-5a3bb800-f0ed-11ea-8dce-dd95b72c7825.png',
   },
 
   {
@@ -69,13 +61,6 @@ export const Networks = [
     link: 'https://www.linkedin.com/in/valdesagb/',
     icone: 'fs-4 bi bi-linkedin  text-primary',
   },
-
-  {
-    id: 'Skype-9631',
-    name: 'Skype',
-    link: 'https://secure.skype.com/portal/profile?intsrc=client-_-windows-_-8.92.0.204-_-.userInfo.profile&tcg=e62bef56-110d-47f6-9bf2-5087168b44e8',
-    icone: 'fs-4 bi bi-skype  text-primary',
-  },
 ]
 
 export const FrontLanguages = [
@@ -83,28 +68,28 @@ export const FrontLanguages = [
     id: 'WordPress-8846',
     name: 'WordPress',
     icone: 'fa-brands fa-wordpress-simple fa-2x text-primary',
-    level: '75%',
+    level: '25%',
   },
 
   {
     id: 'HTML-5',
     name: 'HTML5',
     icone: 'fa-brands fa-html5 fa-2x text-primary',
-    level: '86%',
+    level: '89%',
   },
 
   {
     id: 'CSS-3',
     name: 'CSS3',
     icone: 'fa-brands fa-css3-alt fa-2x text-primary',
-    level: '79%',
+    level: '77%',
   },
 
   {
     id: 'JavaScript-56',
     name: 'JavaScript',
     icone: 'fa-brands fa-js fa-2x text-primary',
-    level: '69%',
+    level: '82%',
   },
 
   {
@@ -113,28 +98,47 @@ export const FrontLanguages = [
     icone: 'fa-solid fa-image fa-2x text-primary',
     level: '32%',
   },
-]
 
-export const BackLanguages = [
   {
     id: 'React-96',
     name: 'React Js',
     icone: 'fa-brands fa-react fa-2x text-primary',
-    level: '68%',
+    level: '79%',
+  },
+]
+
+export const BackLanguages = [
+  {
+    id: 'Express-96',
+    name: 'Express',
+    // icone: 'fa-brands fa-react fa-2x text-primary',
+    level: '52%',
+  },
+  {
+    id: 'Node-96',
+    name: 'Node.js',
+    icone: 'fa-brands fa-node fa-2x text-primary',
+    level: '54%',
+  },
+  {
+    id: 'MongoDB-96',
+    name: 'MongoDB',
+    icone: 'fa-sharp fa-solid fa-server fa-2x text-primary',
+    level: '51%',
   },
 
   {
     id: 'PHP-96',
     name: 'PHP',
     icone: 'fa-brands fa-php fa-2x text-primary',
-    level: '35%',
+    level: '25%',
   },
 
   {
     id: 'MySql-874',
     name: 'MySQL',
     icone: 'fa-solid fa-database fa-2x text-primary',
-    level: '09%',
+    level: '12%',
   },
 
   {
@@ -148,12 +152,12 @@ export const BackLanguages = [
     id: 'Illustrator-8301',
     name: 'Illustrator',
     icone: 'fa-solid fa-bezier-curve fa-2x text-primary',
-    level: '12%',
+    level: '15%',
   },
 ]
 
 export const Projets = [
-  {
+  /* {
     id: 'Suivi',
     title: 'Projet - Suivi',
     link: '',
@@ -173,18 +177,15 @@ export const Projets = [
     cover1: BoostJob2,
     cover2: BoostJob3,
     cover3: BoostJob4,
-  },
+  },*/
 
   {
     id: 'MyFreeWorks',
     title: 'MyFreeWorks',
-    link: '',
+    link: 'https://valdesagb.github.io/MyFreeWorks/',
     description:
-      "Sur ce site conçu sous php, vous pouvez y vendre ou faire des dons de vos oeuvres. Les oeuvres artisanals et d'arts sont prioritaires. Ce site n'est pas encore hébergé mais cela ne saurait tardé. 😉",
+      'Ce site est en quelques sortes une marketplace. Vous pouvez y vendre différents objets.😉',
     mainCover: MyFreeWorks1,
-    cover1: MyFreeWorks2,
-    cover2: MyFreeWorks3,
-    cover3: MyFreeWorks4,
   },
 
   {
@@ -192,11 +193,8 @@ export const Projets = [
     title: 'MoonStore :',
     link: 'https://valdesagb.github.io/moon-store/',
     description:
-      "Ce projet est un projet personnel de créaction de boutique en ligne. Ce dernier est onepage et a été conçu uniquement avec du React Js. Néanmoins, toutes les fontionnalités n'ont pas encore été mise à jour. Elles le seront bientôt. 🤗",
+      'Ce projet est un projet personnel de créaction de boutique en ligne. Ce dernier est onepage et a été conçu uniquement avec du React Js. 🤗',
     mainCover: Moon1,
-    cover1: Moon2,
-    cover2: Moon3,
-    cover3: Moon4,
   },
 
   {
@@ -204,33 +202,16 @@ export const Projets = [
     title: 'La maison jungle :',
     link: 'https://valdesagb.github.io/la-maison-jungle/',
     description:
-      'Un peu comme la boutique MoonStore, ce site est aussi un site de vente de plante. La différence est que celle-ci est moins avancée que MoonStore et est un projet réalisé au cours de mon apprentissage du framework React Js. 🌟',
+      'Un peu comme la boutique MoonStore, ce site est aussi un site de vente de plante. La différence est que celle-ci est moins avancée que MoonStore. 🌟',
     mainCover: LMJ1,
-    cover1: LMJ2,
-    cover2: LMJ3,
-    cover3: LMJ4,
   },
 
   {
     id: 'IFEE',
     title: "Institut des Formations pour l'Emploi et l'Entreprenariat ( IFEE )",
-    link: '',
+    link: 'https://valdesyrn.github.io/Essaie/',
     description:
-      " IFEE est le site officiel de l'Institut des Formations pour l'Emploi et l'Entreprenariat. Je l'ai conçu entièrement sous php. Bien vrai, ce dernier n'est pas parfait, on pourrait encore y ajouter des améliorations et modification. Ce site n'est pas encore hébergé mais cela ne saurait tardé. 😎",
+      " IFEE est le site (vitrine) officiel de l'Institut des Formations pour l'Emploi et l'Entreprenariat. 😎",
     mainCover: IFEE1,
-    cover1: IFEE2,
-    cover2: IFEE3,
-    cover3: IFEE4,
-  },
-
-  {
-    id: 'HandyMan',
-    title: 'HandyMan',
-    link: '',
-    description:
-      " Une autre de mes réalisation personnelle, ce site conçu en HTML5, CSS3 et Javascript, est parfait les entreprises proposant des services en bricolage ou en plomberie et dérivés. Ce site n'est pas encore hébergé mais cela ne saurait tardé. 🎉",
-    mainCover: HandyMan1,
-    cover1: HandyMan1,
-    cover2: HandyMan2,
   },
 ]

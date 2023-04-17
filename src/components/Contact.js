@@ -4,16 +4,16 @@ import Coffee from '../assets/grab-a-coffee.jpg'
 function Contact() {
   function Unavailable() {
     alert(
-      "Ce moyen de contact est indisponible pour le moment. Veuillez me contactez via l'un de mes réseaux dans la rubrique << Me découvrir >> plus haut. Merci ☺ "
+      "Ce moyen de contact est indisponible pour le moment. Veuillez me contactez via l'un de mes réseaux dans la rubrique << Me découvrir >> plus haut ou au pied de page . Merci ☺ "
     )
   }
   return (
     <section className="my-5" id="contact">
       <div className="bg-light">
         <div className="container">
-          <h3>Un projet de creatin web.?</h3>
+          <h3>Un projet de création de site web.?</h3>
           <h4 className="fs-3 fs-md-2 fw-light">
-            Allons en discuter autour d'un café.
+            Discutons-en autour d'un café.
           </h4>
           <div className="row gy-4 gy-md-0 py-3 align-items-center">
             <div className="col-12 col-md-6">
