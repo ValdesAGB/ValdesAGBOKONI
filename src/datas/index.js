@@ -1,26 +1,9 @@
 import Moon1 from '../assets/Moon1.PNG'
-import Moon2 from '../assets/Moon2.PNG'
-import Moon3 from '../assets/Moon3.PNG'
-import Moon4 from '../assets/Moon4.PNG'
 import LMJ1 from '../assets/LMJ1.PNG'
-import LMJ2 from '../assets/LMJ2.PNG'
-import LMJ3 from '../assets/LMJ3.PNG'
-import LMJ4 from '../assets/LMJ4.PNG'
 import IFEE1 from '../assets/IFEE1.PNG'
-import IFEE2 from '../assets/IFEE2.PNG'
-import IFEE3 from '../assets/IFEE3.PNG'
-import IFEE4 from '../assets/IFEE4.PNG'
 import MyFreeWorks1 from '../assets/MyFreeWorks1.PNG'
-import MyFreeWorks2 from '../assets/MyFreeWorks2.PNG'
-import MyFreeWorks3 from '../assets/MyFreeWorks3.PNG'
-import MyFreeWorks4 from '../assets/MyFreeWorks4.PNG'
-import BoostJob1 from '../assets/BoostJob1.PNG'
-import BoostJob2 from '../assets/BoostJob2.PNG'
-import BoostJob3 from '../assets/BoostJob3.PNG'
-import BoostJob4 from '../assets/BoostJob4.PNG'
-import HandyMan1 from '../assets/HandyMan1.PNG'
-import HandyMan2 from '../assets/HandyMan2.PNG'
-import Suivi from '../assets/Suivi.PNG'
+import Sems from '../assets/Sems.png'
+import TOWN from '../assets/TOWN.png'
 
 export const Photoshop = [
   'Retouche de portraits pour éliminer les imperfections du visage ; ',
@@ -198,6 +181,14 @@ export const Projets = [
   },
 
   {
+    id: 'Sems-Portfolio',
+    title: 'Sems Clarita :',
+    link: 'https://valdesagb.github.io/Sems-Portfolio/',
+    description: "Ici, c'est un projet de simulation de portfolio OnePage",
+    mainCover: Sems,
+  },
+
+  {
     id: 'La-Maison-Jungle',
     title: 'La maison jungle :',
     link: 'https://valdesagb.github.io/la-maison-jungle/',
@@ -213,5 +204,14 @@ export const Projets = [
     description:
       " IFEE est le site (vitrine) officiel de l'Institut des Formations pour l'Emploi et l'Entreprenariat. 😎",
     mainCover: IFEE1,
+  },
+
+  {
+    id: 'Sems-Portfolio',
+    title: 'Sems Clarita :',
+    link: 'https://ValdesAGB.github.io/Carla-TOWN',
+    description:
+      'Un peu comme le projet de simulation de portfolio, ce projet est multipage (simulation) et a une page/section blog (simulation)',
+    mainCover: TOWN,
   },
 ]
