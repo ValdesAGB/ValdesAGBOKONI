@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.js": "/ValdesAGBOKONI/static/js/main.43100dbb.js",
+    "main.js": "/ValdesAGBOKONI/static/js/main.e01ea884.js",
     "static/media/MyFreeWorks1.PNG": "/ValdesAGBOKONI/static/media/MyFreeWorks1.76789b2add1b1b3beedc.PNG",
     "static/media/Moon1.PNG": "/ValdesAGBOKONI/static/media/Moon1.a8a13b44a5dc207e017e.PNG",
+    "static/media/TOWN.png": "/ValdesAGBOKONI/static/media/TOWN.192d637eb9f0a8f34adf.png",
     "static/media/LMJ1.PNG": "/ValdesAGBOKONI/static/media/LMJ1.b99527dbb20ceccdffe3.PNG",
     "static/media/IFEE1.PNG": "/ValdesAGBOKONI/static/media/IFEE1.7644bdf1268796d7069f.PNG",
     "static/media/Sems.png": "/ValdesAGBOKONI/static/media/Sems.15563311f6d0e4f7db2d.png",
@@ -10,9 +11,9 @@
     "static/media/code.jpg": "/ValdesAGBOKONI/static/media/code.52255f1e2cf28b608e0e.jpg",
     "static/media/grab-a-coffee.jpg": "/ValdesAGBOKONI/static/media/grab-a-coffee.de1711130488d2c60d3e.jpg",
     "index.html": "/ValdesAGBOKONI/index.html",
-    "main.43100dbb.js.map": "/ValdesAGBOKONI/static/js/main.43100dbb.js.map"
+    "main.e01ea884.js.map": "/ValdesAGBOKONI/static/js/main.e01ea884.js.map"
   },
   "entrypoints": [
-    "static/js/main.43100dbb.js"
+    "static/js/main.e01ea884.js"
   ]
 }
