@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/ValdesAGBOKONI/static/js/main.e01ea884.js",
+    "main.js": "/ValdesAGBOKONI/static/js/main.cf40776f.js",
     "static/media/MyFreeWorks1.PNG": "/ValdesAGBOKONI/static/media/MyFreeWorks1.76789b2add1b1b3beedc.PNG",
     "static/media/Moon1.PNG": "/ValdesAGBOKONI/static/media/Moon1.a8a13b44a5dc207e017e.PNG",
     "static/media/TOWN.png": "/ValdesAGBOKONI/static/media/TOWN.192d637eb9f0a8f34adf.png",
@@ -8,12 +8,13 @@
     "static/media/IFEE1.PNG": "/ValdesAGBOKONI/static/media/IFEE1.7644bdf1268796d7069f.PNG",
     "static/media/Sems.png": "/ValdesAGBOKONI/static/media/Sems.15563311f6d0e4f7db2d.png",
     "static/media/Me.jpeg": "/ValdesAGBOKONI/static/media/Me.e1a517da297e687116ee.jpeg",
+    "static/media/vitrine-design.png": "/ValdesAGBOKONI/static/media/vitrine-design.7110002ceb0b2930c0d5.png",
     "static/media/code.jpg": "/ValdesAGBOKONI/static/media/code.52255f1e2cf28b608e0e.jpg",
     "static/media/grab-a-coffee.jpg": "/ValdesAGBOKONI/static/media/grab-a-coffee.de1711130488d2c60d3e.jpg",
     "index.html": "/ValdesAGBOKONI/index.html",
-    "main.e01ea884.js.map": "/ValdesAGBOKONI/static/js/main.e01ea884.js.map"
+    "main.cf40776f.js.map": "/ValdesAGBOKONI/static/js/main.cf40776f.js.map"
   },
   "entrypoints": [
-    "static/js/main.e01ea884.js"
+    "static/js/main.cf40776f.js"
   ]
 }
