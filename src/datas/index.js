@@ -4,6 +4,9 @@ import IFEE1 from '../assets/IFEE1.PNG'
 import MyFreeWorks1 from '../assets/MyFreeWorks1.PNG'
 import Sems from '../assets/Sems.png'
 import TOWN from '../assets/TOWN.png'
+import vitrine_design from '../assets/vitrine-design.png'
+import lucy from '../assets/LUCY.png'
+import votrelogo from '../assets/votrelogo.png'
 
 export const Photoshop = [
   'Retouche de portraits pour éliminer les imperfections du visage ; ',
@@ -165,7 +168,7 @@ export const Projets = [
   {
     id: 'MyFreeWorks',
     title: 'MyFreeWorks',
-    link: 'https://valdesagb.github.io/MyFreeWorks/',
+    link: 'https://myfreeworks.valdesagbokoni.com/',
     description:
       'Ce site est en quelques sortes une marketplace. Vous pouvez y vendre différents objets.😉',
     mainCover: MyFreeWorks1,
@@ -174,7 +177,7 @@ export const Projets = [
   {
     id: 'MoonStore',
     title: 'MoonStore :',
-    link: 'https://valdesagb.github.io/moon-store/',
+    link: 'https://moonstore.valdesagbokoni.com/',
     description:
       'Ce projet est un projet personnel de créaction de boutique en ligne. Ce dernier est onepage et a été conçu uniquement avec du React Js. 🤗',
     mainCover: Moon1,
@@ -183,7 +186,7 @@ export const Projets = [
   {
     id: 'Sems-Portfolio',
     title: 'Sems Clarita :',
-    link: 'https://valdesagb.github.io/Sems-Portfolio/',
+    link: 'https://semsclarita.valdesagbokoni.com/',
     description: "Ici, c'est un projet de simulation de portfolio OnePage",
     mainCover: Sems,
   },
@@ -191,7 +194,7 @@ export const Projets = [
   {
     id: 'La-Maison-Jungle',
     title: 'La maison jungle :',
-    link: 'https://valdesagb.github.io/la-maison-jungle/',
+    link: 'https://lmj.valdesagbokoni.com/',
     description:
       'Un peu comme la boutique MoonStore, ce site est aussi un site de vente de plante. La différence est que celle-ci est moins avancée que MoonStore. 🌟',
     mainCover: LMJ1,
@@ -200,18 +203,45 @@ export const Projets = [
   {
     id: 'IFEE',
     title: "Institut des Formations pour l'Emploi et l'Entreprenariat ( IFEE )",
-    link: 'https://valdesyrn.github.io/Essaie/',
+    link: 'https://ifee.valdesagbokoni.com/',
     description:
       " IFEE est le site (vitrine) officiel de l'Institut des Formations pour l'Emploi et l'Entreprenariat. 😎",
     mainCover: IFEE1,
   },
 
   {
-    id: 'Sems-Portfolio',
-    title: 'Sems Clarita :',
-    link: 'https://ValdesAGB.github.io/Carla-TOWN',
+    id: 'TOWN-Portfolio',
+    title: 'TOWN Clarita :',
+    link: 'https://carlatown.valdesagbokoni.com/',
     description:
       'Un peu comme le projet de simulation de portfolio, ce projet est multipage (simulation) et a une page/section blog (simulation)',
     mainCover: TOWN,
+  },
+
+  {
+    id: 'vitrine-design',
+    title: 'Vitrine Design :',
+    link: 'https://vitrine-design.valdesagbokoni.com/',
+    description:
+      "Ce projet est un site vitrine pour une agence fictive de design web. C'est un site vitrine onepage",
+    mainCover: vitrine_design,
+  },
+
+  {
+    id: 'LUCY-TOWNSEND',
+    title: 'LUCY TOWNSEND :',
+    link: 'https://portfolio-multipage.valdesagbokoni.com/',
+    description:
+      'Ce projet est un portfolio multipage pour une personne fictive (simulation).',
+    mainCover: lucy,
+  },
+
+  {
+    id: 'Votre-LOGO',
+    title: 'Site vitrine multipage :',
+    link: 'https://portfolio-multipage.valdesagbokoni.com/',
+    description:
+      "Ce projet est un site vitrine pour une agence fictive de design web. C'est un site vitrine multipage (simulation).",
+    mainCover: votrelogo,
   },
 ]

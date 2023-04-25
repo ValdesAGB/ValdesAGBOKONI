@@ -11,7 +11,7 @@ function Biography() {
             <h1 className="fw-bold">
               Je suis Valdès AGBOKONI Développeur web et Designer graphique.
             </h1>
-            <h2 className="fw-lighter">Bienvenue dans mon univers créatif</h2>
+            <h2 className="fw-light">Bienvenue dans mon univers créatif</h2>
 
             <button
               type="button"
