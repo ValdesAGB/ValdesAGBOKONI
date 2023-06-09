@@ -1,23 +1,15 @@
 import Moon1 from '../assets/Moon1.PNG'
 import LMJ1 from '../assets/LMJ1.PNG'
-import IFEE1 from '../assets/IFEE1.PNG'
 import MyFreeWorks1 from '../assets/MyFreeWorks1.PNG'
 import Sems from '../assets/Sems.png'
 import TOWN from '../assets/TOWN.png'
 import vitrine_design from '../assets/vitrine-design.png'
 import lucy from '../assets/LUCY.png'
 import votrelogo from '../assets/votrelogo.png'
-
-export const Photoshop = [
-  'Retouche de portraits pour éliminer les imperfections du visage ; ',
-  "Détourage d'éléments spécifiques sur une image pour une réutilisation ultérieure ;",
-  'Modification de texte sur une image.',
-]
-
-export const Illustrator = [
-  " Corrections mineures et retouches de logos ou autres créations, à un coût inférieur à celui d'un expert ;",
-  ' Création de logo simple à partir de vos idées ou exemples existants.',
-]
+import rano from '../assets/rano.png'
+import lana from '../assets/lana.png'
+import anna from '../assets/anna.png'
+import legal from '../assets/legal.png'
 
 export const Networks = [
   {
@@ -142,7 +134,7 @@ export const BackLanguages = [
   },
 ]
 
-export const Projets = [
+export const ProjetsPerso = [
   /* {
     id: 'Suivi',
     title: 'Projet - Suivi',
@@ -170,7 +162,7 @@ export const Projets = [
     title: 'MyFreeWorks',
     link: 'https://myfreeworks.valdesagbokoni.com/',
     description:
-      'Ce site est en quelques sortes une marketplace. Vous pouvez y vendre différents objets.😉',
+      "Ce site est en quelques sortes une marketplace. Vous pouvez y vendre différents objets. Cependant, sa construction n'est pas encore finalisée😉",
     mainCover: MyFreeWorks1,
   },
 
@@ -179,16 +171,8 @@ export const Projets = [
     title: 'MoonStore :',
     link: 'https://moonstore.valdesagbokoni.com/',
     description:
-      'Ce projet est un projet personnel de créaction de boutique en ligne. Ce dernier est onepage et a été conçu uniquement avec du React Js. 🤗',
+      "MoonStore, est un projet personnel: un site e-commerce minimaliste. Je me suis plus concentré sur le backend que sur l'aspect visuel, pour évaluer mes aptitudes avec React Js.",
     mainCover: Moon1,
-  },
-
-  {
-    id: 'Sems-Portfolio',
-    title: 'Sems Clarita :',
-    link: 'https://semsclarita.valdesagbokoni.com/',
-    description: "Ici, c'est un projet de simulation de portfolio OnePage",
-    mainCover: Sems,
   },
 
   {
@@ -196,37 +180,46 @@ export const Projets = [
     title: 'La maison jungle :',
     link: 'https://lmj.valdesagbokoni.com/',
     description:
-      'Un peu comme la boutique MoonStore, ce site est aussi un site de vente de plante. La différence est que celle-ci est moins avancée que MoonStore. 🌟',
+      "Ce projet a été réalisé avec les mêmes objectifs que MoonStore, à la différence près qu'il est niché dans la vente de plante.",
     mainCover: LMJ1,
   },
 
-  {
+  /*  {
     id: 'IFEE',
     title: "Institut des Formations pour l'Emploi et l'Entreprenariat ( IFEE )",
     link: 'https://ifee.valdesagbokoni.com/',
     description:
       " IFEE est le site (vitrine) officiel de l'Institut des Formations pour l'Emploi et l'Entreprenariat. 😎",
     mainCover: IFEE1,
-  },
+  },*/
+]
 
+export const projetPro = [
   {
     id: 'TOWN-Portfolio',
-    title: 'TOWN Clarita :',
+    title: 'Carla TOWN :',
     link: 'https://carlatown.valdesagbokoni.com/',
     description:
-      'Un peu comme le projet de simulation de portfolio, ce projet est multipage (simulation) et a une page/section blog (simulation)',
+      'Un peu comme le projet Clarita, Carla, photographe, a eu droit à un portfolio. Le sien par contre est multipage et a une section blog (simulées bien entendu).',
     mainCover: TOWN,
+  },
+  {
+    id: 'Sems-Portfolio',
+    title: 'Sems Clarita :',
+    link: 'https://semsclarita.valdesagbokoni.com/',
+    description:
+      "Sems Clarita: Ici nous avons un prototype de portfolio pour une Brand Designer, j'ai nommée, Clarita.",
+    mainCover: Sems,
   },
 
   {
-    id: 'vitrine-design',
-    title: 'Vitrine Design :',
-    link: 'https://vitrine-design.valdesagbokoni.com/',
+    id: 'Votre-LOGO',
+    title: 'Site vitrine multipage :',
+    link: 'https://site-vitrine-multipage.valdesagbokoni.com/',
     description:
-      "Ce projet est un site vitrine pour une agence fictive de design web. C'est un site vitrine onepage",
-    mainCover: vitrine_design,
+      "Ce projet est un site vitrine pour une agence fictive de design web. C'est un site vitrine multipage (simulation).",
+    mainCover: votrelogo,
   },
-
   {
     id: 'LUCY-TOWNSEND',
     title: 'LUCY TOWNSEND :',
@@ -235,13 +228,77 @@ export const Projets = [
       'Ce projet est un portfolio multipage pour une personne fictive (simulation).',
     mainCover: lucy,
   },
+  {
+    id: 'vitrine-design',
+    title: 'Vitrine Design :',
+    link: 'https://vitrine-design.valdesagbokoni.com/',
+    description:
+      "Ce projet est un site vitrine pour une agence fictive de design web. C'est un site vitrine onepage.",
+    mainCover: vitrine_design,
+  },
 
   {
-    id: 'Votre-LOGO',
-    title: 'Site vitrine multipage :',
-    link: 'https://portfolio-multipage.valdesagbokoni.com/',
+    id: 'rano',
+    title: 'RANO :',
+    link: 'https://rano.valdesagbokoni.com/',
     description:
-      "Ce projet est un site vitrine pour une agence fictive de design web. C'est un site vitrine multipage (simulation).",
-    mainCover: votrelogo,
+      "Ce projet est un site OnePage/landing page dédié à la présentation d'une nouvelle application mobile. Avec un design moderne et attrayant, j'ai mis en avant les fonctionnalités uniques de cette application et les avantages qu'elle offre. Le site offre une expérience immersive avec des visuels captivants, des animations fluides et des informations claires pour attirer l'attention des visiteurs.",
+    mainCover: rano,
+  },
+
+  {
+    id: 'lana',
+    title: 'LANA :',
+    link: 'https://lana.valdesagbokoni.com/',
+    description:
+      "Découvrez un site vitrine captivant conçu spécialement pour les passionnés de l'art visuel. Présentant le travail exceptionnel d'un talentueux artiste visuel ( fictif ), ce site est une vitrine numérique mettant en avant sa créativité, son expertise et son style unique. Chaque élément visuel est soigneusement sélectionné pour évoquer des émotions et captiver votre imagination.",
+
+    mainCover: lana,
+  },
+
+  {
+    id: 'anna',
+    title: 'Anna Peterson :',
+    link: 'https://anna-peterson.valdesagbokoni.com/',
+    description:
+      "Ce projet est un portfolio professionnel complet qui permet aux visiteurs d'explorer le travail et les réalisations d'une personne fictive talentueuse dans le domaine de la photographie. C'est une vitrine attrayante et informative qui met en valeur les compétences et l'expertise d'Anna Peterson pour attirer l'attention des potentiels employeurs, clients ou partenaires de projet.",
+
+    mainCover: anna,
+  },
+
+  {
+    id: 'legal',
+    title: 'Legal :',
+    link: 'https://legal.valdesagbokoni.com/',
+    description:
+      "Legal est un site vitrine pour une agence/entreprise spécialisée dans le droit. Grâce à cette vitrine, les potentiels clients ont facilement accès aux informations voulues et une facilité à entrer en contact avec les membres de l'équipe de l'agence pour de potentiels services.",
+    mainCover: legal,
+  },
+]
+
+export const formulaireElements = [
+  {
+    id: 'lastName',
+    title: 'Nom :',
+    inputType: 'text',
+    divClass: 'col mb-3',
+  },
+  {
+    id: 'firstName',
+    title: 'Prénom(s) :',
+    inputType: 'text',
+    divClass: 'col mb-3',
+  },
+  {
+    id: 'mail',
+    title: 'Adresse mail :',
+    inputType: 'email',
+    divClass: 'col-12 mb-3 ',
+  },
+  {
+    id: 'message',
+    title: 'Message :',
+
+    divClass: 'col-12 mb-3',
   },
 ]

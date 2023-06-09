@@ -5,6 +5,11 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
+import {
+  FormulaireProvider,
+  LoadingProvider,
+  MessageProvider,
+} from './untils/context'
 
 function App() {
   return (
@@ -13,7 +18,13 @@ function App() {
       <Biography />
       <Skills />
       <Portfolio />
-      <Contact />
+      <LoadingProvider>
+        <MessageProvider>
+          <FormulaireProvider>
+            <Contact />
+          </FormulaireProvider>
+        </MessageProvider>
+      </LoadingProvider>
       <Footer />
     </React.Fragment>
   )

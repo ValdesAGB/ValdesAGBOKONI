@@ -1,5 +1,5 @@
 import React from 'react'
-import Me from '../assets/Me.jpeg'
+import Me from '../assets/Me (2).jpeg'
 import { Illustrator, Networks, Photoshop } from '../datas'
 
 function Biography() {
@@ -53,43 +53,28 @@ function Biography() {
                   >
                     <p>Bienvenue à vous .</p>
                     <p>
-                      Je suis AGBOKONI Valdès, diplômé en développement web de
+                      Je suis AGBOKONI Valdès, un développeur web diplômé de
                       l'École Internationale de Graphisme du Bénin (EIG-Bénin)
                       et titulaire d'une licence 1 en génie logiciel de
                       l'Institut de Formation et de Recherche en Informatique
-                      (IFRI) de l'UAC. J’ai aussi des compétences en graphisme :
-                      retouche photo, manipulation d’images, et conception de
-                      logos.
+                      (IFRI) de l'UAC. Ma passion est le développement web et je
+                      possède une expertise solide dans la création de sites
+                      vitrines, de portfolios, de sites one-page et
+                      d'applications backend avec NodeJs, Express et MongoDB.
                     </p>
                     <p>
-                      Je serai ravi de mettre à votre disposition, les années
-                      d'expérience et l'expertise que j’ai acquise dans le
-                      domaine du développement web pour tous projets de création
-                      de site web selon le but de ce dernier. Dans le domaine du
-                      graphisme, je ne prétends pas être un expert, mais j'ai
-                      acquis suffisamment de compétences pour vous offrir les
-                      services suivants :
+                      Je suis également en train d'acquérir des compétences en
+                      création de sites e-commerce et d'autres variétés de sites
+                      web. Je suis déterminé à me perfectionner continuellement
+                      dans le domaine du développement web afin de pouvoir
+                      offrir des solutions efficaces et adaptées à vos besoins.
                     </p>
-                    <div>
-                      *Photoshop :
-                      <ul>
-                        {Photoshop.map((element, index) => (
-                          <li key={`${element} - ${index}`}>{element}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div>
-                      *Illustrator :
-                      <ul>
-                        {Illustrator.map((element, index) => (
-                          <li key={`${element} - ${index}`}>{element}</li>
-                        ))}
-                      </ul>
-                    </div>
                     <p>
-                      Je continue à perfectionner mes compétences jour après
-                      jour, afin de vous offrir des prestations de qualité qui
-                      dépasseront vos attentes.
+                      Si vous cherchez à créer un site web vitrine ou un
+                      portfolio pour votre entreprise ou votre projet personnel,
+                      ou si vous avez besoin d'une application backend pour
+                      votre entreprise, je suis disponible pour travailler avec
+                      vous dès maintenant.
                     </p>
                     ---------------------------------------------------------------------
                     <div>
