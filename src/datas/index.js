@@ -24,12 +24,14 @@ export const Networks = [
     name: 'GitHub',
     link: 'https://github.com/ValdesAGB',
     icone: 'fs-4 bi bi-github',
+    icone: 'fs-4 bi bi-github',
   },
 
   {
     id: 'Gmail-263',
     name: 'Gmail',
     link: 'mailto:valdesagbokoni01@gmail.com',
+    icone: 'fs-4 bi bi-envelope-at',
     icone: 'fs-4 bi bi-envelope-at',
   },
 

@@ -98,6 +98,7 @@ function Biography() {
                                 )}
                               </div>
                               <div className="col-sm-9  col-6">{name}</div>
+                              <div className="col-sm-9  col-6">{name}</div>
                             </a>
                           </li>
                         ))}

@@ -10,6 +10,8 @@ import {
   LoadingProvider,
   MessageProvider,
 } from './untils/context'
+import Portfolio from './components/Portfolio'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
           </FormulaireProvider>
         </MessageProvider>
       </LoadingProvider>
+      <Footer />
+      <Skills />
+      <Portfolio />
+      <Contact />
       <Footer />
     </React.Fragment>
   )
