@@ -74,13 +74,12 @@ function Formulaire() {
 
   const feedback = (e) => {
     e.preventDefault()
-    const message = `Un problème est survenu. Veuillez utiliser les autres moyens de contact situé à votre gauche`
+    const message = `Un problème est survenu. Veuillez utiliser les autres moyens de contact mise à votre disposition.`
     toggleIsDataLoading(true)
     setTimeout(() => {
       toggleMessage(message)
       toggleIsDataLoading(false)
     }, 2000)
-    console.log(message)
   }
 
   const FeedbackStyled = styled.h5`
@@ -134,6 +133,7 @@ function Formulaire() {
                 <div className={divClass} key={id}>
                   {inputType ? (
                     <Input
+                      required
                       type={inputType}
                       className={`form-control ${
                         formulaireContent[id] !== '' ? 'redText' : ''
@@ -151,6 +151,7 @@ function Formulaire() {
                       rows={5}
                       onChange={(e) => set(id, e)}
                       placeholder={title}
+                      required
                     ></Textarea>
                   )}
                 </div>
