@@ -2,17 +2,17 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { PortfolioButtonContext } from '../untils/context'
 import { typesDeSitesElements } from '../data'
+import { police } from '../untils/police'
 
+const Select = styled.select`
+  padding: 2%;
+  margin-bottom: 15%;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: ${police.second};
+`
 function ButtonSm() {
   const { handleFilter } = useContext(PortfolioButtonContext)
-
-  const Select = styled.select`
-    padding: 2%;
-    margin-bottom: 15%;
-    border-radius: 5px;
-    font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
-  `
 
   return (
     <React.Fragment>
@@ -35,10 +35,3 @@ function ButtonSm() {
 }
 
 export default ButtonSm
-/** <SelectSM onChange={(event) => handleFilter(event.target.value)}>
-        {typesDeSitesElements.map(({ id, title }) => (
-          <option key={id} value={title}>
-            {title}
-          </option>
-        ))}
-      </SelectSM> */

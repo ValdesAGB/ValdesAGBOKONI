@@ -2,6 +2,70 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { navigationElements } from '../data'
 import { backgroundColor, color } from '../untils/colors'
+import { police } from '../untils/police'
+import ScrollIntoView from 'react-scroll-into-view'
+
+const MyName = styled.div`
+  a {
+    text-decoration: none;
+    color: ${color.white};
+  }
+  .first {
+    @media (max-width: 425px) {
+      font-weight: 800;
+    }
+    background-color: ${color.primary};
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+
+  .last {
+    font-weight: 800;
+  }
+
+  @media (min-width: 320px) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0;
+    font-size: 1.5em;
+  }
+`
+const Icone = styled.i`
+  color: ${color.white};
+  border: 0 !important;
+  @media (min-width: 320px) {
+    font-size: 2.5em;
+  }
+  @media (min-width: 375px) {
+    font-size: 3em;
+  }
+`
+const ListItemsLink = styled.a`
+  color: ${(props) =>
+    props.ids !== 'accueil' ? color.white : color.activeMenuLinkColor};
+
+  &:hover {
+    color: ${(props) =>
+      props.ids !== 'accueil' ? color.aboutMeColor : color.activeMenuLinkColor};
+  }
+
+  &:active {
+    color: ${(props) =>
+      props.ids !== 'accueil' ? color.aboutMeColor : color.activeMenuLinkColor};
+  }
+
+  &:focus {
+    color: ${(props) =>
+      props.ids !== 'accueil' ? color.aboutMeColor : color.activeMenuLinkColor};
+  }
+
+  @media (max-width: 1199px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+`
 
 function Header() {
   const [isAtTop, setIsAtTop] = useState(true)
@@ -19,18 +83,20 @@ function Header() {
   }, [])
 
   const Navigation = styled.section`
-    background-color: ${isAtTop ? 'transparent' : backgroundColor.secondColor};
-    font-family: 'Open Sans', sans-serif;
-    color: white;
+    background-color: ${isAtTop
+      ? backgroundColor.mainColor
+      : backgroundColor.secondColor};
+    font-family: ${police.second};
+    color: ${color.white};
     position: fixed;
     top: 0;
     z-index: 3;
     width: 100%;
+
     @media (min-width: 320px) {
-      padding: 8% 0 8% 0;
+      padding: 8% 0;
       margin-bottom: 3%;
     }
-
     @media (min-width: 425px) {
       padding: 5% 0 5% 0;
       margin-bottom: 2%;
@@ -39,83 +105,10 @@ function Header() {
       padding: 3% 0 3% 0;
       margin-bottom: 1%;
     }
-    @media (min-width: 1360px) {
+    @media (min-width: 1200px) {
       padding: 2% 0 2% 0;
-      margin-bottom: 1%;
-    }
-
-    @media (min-width: 1360px) {
       margin-bottom: 0%;
     }
-  `
-
-  const BrandLink = styled.a`
-    color: white;
-    @media (min-width: 1024px) {
-      margin-right: 35%;
-    }
-
-    @media (min-width: 1440px) {
-      margin-right: 40%;
-    }
-  `
-
-  const MyName = styled.div`
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    .first {
-      @media (max-width: 425px) {
-        font-weight: 800;
-      }
-      background-color: ${color.primary};
-      padding: 2% 5%;
-      border-radius: 5px;
-    }
-
-    .last {
-      font-weight: 800;
-    }
-
-    @media (min-width: 320px) {
-      font-size: 1.5em;
-    }
-
-    @media (min-width: 768px) {
-      margin: 0;
-      font-size: 1.5em;
-    }
-  `
-  const Icone = styled.i`
-    color: white;
-    @media (min-width: 320px) {
-      font-size: 2.5em;
-    }
-    @media (min-width: 375px) {
-      font-size: 3em;
-    }
-  `
-
-  const ListItems = styled.li`
-    color: white;
-  `
-
-  const ListItemsLink = styled.a`
-    color: ${(props) => (props.ids !== 'acceuil' ? 'white' : '#ffce07')};
-    &:hover {
-      color: ${color.gris};
-    }
-
-    &:focus {
-      color: ${color.gris};
-    }
-  `
-
-  const MenuContainer = styled.div`
-    background-color: ${isAtTop
-      ? backgroundColor.mainColor
-      : backgroundColor.secondColor};
   `
 
   return (
@@ -123,19 +116,16 @@ function Header() {
       <Navigation className="row">
         <div>
           <div className="container">
-            <nav className="row navbar navbar-expand-lg">
+            <nav className="row navbar navbar-expand-xl">
               <div className="container-fluid">
-                <BrandLink
-                  className="navbar-brand col-8 col-md-5 col-lg-3"
-                  href="#"
-                >
+                <div className="navbar-brand col-xl-7 col-xxl-8">
                   <MyName className="col-md">
-                    <a href="#">
+                    <a href="/">
                       <span className="last d-none d-md-inline">AGBOKONI</span>{' '}
                       <span className="first">Valdès</span>
                     </a>
                   </MyName>
-                </BrandLink>
+                </div>
 
                 <Icone
                   className="navbar-toggler bi bi-list"
@@ -146,25 +136,24 @@ function Header() {
                   aria-label="Toggle navigation"
                 />
 
-                <MenuContainer
+                <div
                   className="collapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
-                  <ul className="navbar-nav me-auto mb-2 mb-lg-0  ">
+                  <ul className="navbar-nav">
                     {navigationElements.map(({ id, title, href }) => (
-                      <ListItems className="nav-item" key={id}>
+                      <li className="nav-item" key={id}>
                         <ListItemsLink
                           ids={id}
-                          className={`nav-link ${id}`}
+                          className="nav-link"
                           href={href}
-                          /* onClick={(event) => handleAnchorClick(event, id)}*/
                         >
                           {title}
                         </ListItemsLink>
-                      </ListItems>
+                      </li>
                     ))}
                   </ul>
-                </MenuContainer>
+                </div>
               </div>
             </nav>
           </div>

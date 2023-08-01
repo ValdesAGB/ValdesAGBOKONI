@@ -10,13 +10,17 @@ import rano from '../assets/rano.png'
 import lana from '../assets/lana.png'
 import anna from '../assets/anna.png'
 import legal from '../assets/legal.png'
+import trustful from '../assets/trustful.PNG'
+import safZone from '../assets/safZone.png'
+import ebookyo from '../assets/e-bookyo.png'
+import lens from '../assets/lens.PNG'
 
 export const myName = 'Valdès AGBOKONI'
 
 export const navigationElements = [
   {
-    id: 'acceuil',
-    title: 'Acceuil',
+    id: 'accueil',
+    title: 'Accueil',
     href: '#',
   },
 
@@ -47,8 +51,8 @@ export const navigationElements = [
 
 export const typerwriterElements = [
   myName,
-  'Développeur web',
-  'Designer graphique',
+  'Développeur web.',
+  'Designer graphique.',
 ]
 
 export const statistiquesElements = [
@@ -311,6 +315,46 @@ export const portfolioElements = [
     cover: LMJ1,
     type: 'Site e-commerce',
   },
+
+  {
+    id: 'trustful',
+    title: 'Agence TRUSTFUL',
+    link: 'https://trustful.valdesagbokoni.com/',
+    description:
+      "Découvrez Trustful, le site vitrine captivant d'une agence de rédaction. Plongez dans l'univers de la création de contenu de qualité et explorez leurs services d'écriture professionnels.",
+    cover: trustful,
+    type: 'Site vitrine',
+  },
+
+  {
+    id: 'lens',
+    title: 'Robbie Lens',
+    link: 'https://robbie-lens.valdesagbokoni.com/',
+    description:
+      "Explorez l'univers captivant de la photographie de Robbie Lens à travers ce portfolio qui met en avant son parcours, ses services, ses tarifs et vous transporte avec ses réalisations époustouflantes, composées d'images d'une qualité exceptionnelle.",
+    cover: lens,
+    type: 'Portfolio',
+  },
+
+  {
+    id: 'safZon',
+    title: 'safZon',
+    link: 'https://safZon.valdesagbokoni.com/',
+    description:
+      "Découvrez SafZone, le site vitrine captivant d'une agence de protection rapprochée. Plongez dans l'univers de la sécurité de premier ordre et explorez nos services de protection personnalisés.",
+    cover: safZone,
+    type: 'Site vitrine',
+  },
+
+  {
+    id: 'e-bookyo',
+    title: 'E-bookyo',
+    link: 'https://e-bookyo.valdesagbokoni.com/',
+    description:
+      "Explorez à travers E-bookyo, le livre du moment. De par son design conçu pour cause, E-bookyo, une landing page,  vous présente les différents sommets qu'atteint la littérature de nos jours en vous laissant découvrir par la même occasion les aventures d'Herry Khan, auteur de ce chef-d'oeuvre.",
+    cover: ebookyo,
+    type: 'Site onepage/Landing page',
+  },
 ]
 
 export const Networks = [
@@ -339,7 +383,7 @@ export const Networks = [
     id: 'linkedin',
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/valdesagb/',
-    icone: 'bi bi-linkedin text-primary',
+    icone: 'bi bi-linkedin ',
   },
 ]
 

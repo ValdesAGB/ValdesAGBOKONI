@@ -3,135 +3,149 @@ import Me from '../assets/Me.jpeg'
 import styled from 'styled-components'
 import { statistiquesElements } from '../data'
 import { backgroundColor, color } from '../untils/colors'
-function AboutMe() {
-  const AbouteMeStyled = styled.section`
-    color: #b2c0d0;
-    background-color: ${backgroundColor.secondColor};
-    @media (min-width: 320px) {
-      padding-top: 20%;
-      padding-bottom: 20%;
-    }
-    @media (min-width: 768px) {
-      padding-top: 5%;
-      padding-bottom: 5%;
-    }
-    @media (min-width: 1024px) {
-      padding-top: 0%;
-      padding-bottom: 0%;
-    }
-  `
+import { police } from '../untils/police'
 
-  const CoverContainer = styled.div`
+const AbouteMeStyled = styled.section`
+  color: ${color.aboutMeColor};
+  background-color: ${backgroundColor.secondColor};
+  @media (min-width: 320px) {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  @media (min-width: 768px) {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  @media (min-width: 992px) {
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+`
+
+const CoverContainer = styled.div`
+  @media (max-width: 767px) {
     margin-bottom: 10%;
-    @media (min-width: 768px) {
-      margin-bottom: 5%;
-    }
-  `
-  const Image = styled.img`
-    width: 100%;
-    border-radius: 20px;
-  `
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 5%;
+  }
+`
+const Image = styled.img`
+  width: 100%;
+  border-radius: 20px;
+`
 
-  const Gretting = styled.h2`
-    color: white;
-    font-weight: 700;
-    line-height: 1.35;
+const Gretting = styled.h2`
+  color: white;
+  font-weight: 700;
+  line-height: 1.35;
+  @media (min-width: 320px) {
+    margin-bottom: 6%;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 3%;
+  }
+`
+
+const Paragraph = styled.p`
+  font-family: ${police.second};
+  text-align: justify;
+`
+const Content = styled.div`
+  padding: 10% 0;
+  .paragraph1 {
     @media (min-width: 320px) {
-      margin-bottom: 6%;
+      font-size: 1.2em;
     }
     @media (min-width: 768px) {
-      margin-bottom: 3%;
+      font-size: 1.3em;
     }
-  `
-
-  const Paragraph = styled.p`
-    font-family: 'Open Sans', sans-serif;
-    text-align: justify;
-  `
-  const Content = styled.div`
-    padding: 10% 0 10% 0;
-    .paragraph1 {
-      margin-top: 3%;
-      @media (min-width: 320px) {
-        font-size: 1.2em;
-      }
-      @media (min-width: 768px) {
-        font-size: 1.3em;
-      }
-      @media (min-width: 1024px) {
-        font-size: 1.1em;
-      }
-      @media (min-width: 1440px) {
-        font-size: 1.3em;
-      }
+    @media (min-width: 992px) {
+      font-size: 1.1em;
     }
-    .paragraph2 {
-      @media (min-width: 320px) {
-        font-size: 1em;
-      }
-      @media (min-width: 768px) {
-        font-size: 1.1em;
-      }
-      @media (min-width: 1024px) {
-        font-size: 1em;
-      }
-      @media (min-width: 1440px) {
-        font-size: 1.1em;
-      }
+    @media (min-width: 1400px) {
+      font-size: 1.3em;
     }
-  `
-
-  const StatistiquesContainer = styled.div`
-    margin-top: 10%;
+  }
+  .paragraph2 {
+    @media (min-width: 320px) {
+      font-size: 1em;
+    }
     @media (min-width: 768px) {
-      margin-top: 5%;
+      font-size: 1.1em;
     }
-    @media (min-width: 1024px) {
-      margin-top: 10%;
+    @media (min-width: 992px) {
+      font-size: 1em;
     }
-    h2 {
-      font-size: 3em;
-      font-weight: 600;
-      color: ${color.primary};
+    @media (min-width: 1400px) {
+      font-size: 1.1em;
     }
+  }
+`
 
-    p {
-      font-weight: 800;
-      color: ${color.white};
-    }
-  `
+const StatistiquesContainer = styled.div`
+  margin-top: 10%;
+  @media (min-width: 768px) {
+    margin-top: 5%;
+  }
+
+  h2 {
+    font-size: 3em;
+    font-weight: 600;
+    color: ${color.primaryVariante};
+  }
+
+  p {
+    font-weight: 800;
+    color: ${color.white};
+  }
+`
+
+function AboutMe() {
   return (
     <React.Fragment>
       <AbouteMeStyled id="about-me">
         <Content className="container">
-          <div className="row align-items-center">
-            <CoverContainer className="col-12 col-lg-4">
+          <div className="row justify-content-center">
+            <CoverContainer className="col-12 col-sm-10 col-lg-8 col-xl-4">
               <Image src={Me} alt="Valdès AGBOKONI - cover" />
             </CoverContainer>
-            <div className="col-12 col-lg offset-lg-1">
-              <Gretting>Bonjour, je m'appelle Valdès !</Gretting>
+            <div className="col-12 col-xl offset-xl-1">
+              <Gretting>Bonjour, je m'appelle Valdès ✨!</Gretting>
               <Paragraph className="paragraph1">
-                Je suis AGBOKONI Valdès, un développeur web diplômé de l'École
-                Internationale de Graphisme du Bénin (EIG-Bénin) et titulaire
-                d'une licence 1 en génie logiciel de l'Institut de Formation et
-                de Recherche en Informatique (IFRI) de l'UAC. Ma passion est le
-                développement web et je possède une expertise solide dans la
-                création de sites vitrines, de portfolios, de sites one-page et
-                d'applications backend avec NodeJs, Express et MongoDB.
+                Je suis <strong>AGBOKONI Valdès</strong>, développeur web
+                diplômé de l'
+                <strong>
+                  École Internationale de Graphisme du Bénin (EIG-Bénin)
+                </strong>{' '}
+                et titulaire d'une <strong>licence 1 en génie logiciel</strong>{' '}
+                de l'
+                <strong>
+                  Institut de Formation et de Recherche en Informatique (IFRI)
+                </strong>{' '}
+                de l'UAC. Ma passion est le développement web et je possède une
+                expertise solide dans la{' '}
+                <strong>création de sites vitrines</strong>, de
+                <strong> portfolios</strong>, de <strong>sites one-page</strong>{' '}
+                et d'<strong>applications backend/API Restful</strong> avec
+                <strong> NodeJs</strong>, <strong>Express</strong> et{' '}
+                <strong>MongoDB</strong>.
               </Paragraph>
 
               <Paragraph className="paragraph2">
-                J'acquiert en ce moments de nouvelles compétences en création de
-                sites e-commerce et d'autres variétés de sites web. Je suis
-                déterminé à me perfectionner continuellement dans le domaine du
-                développement web afin de pouvoir offrir des solutions efficaces
-                et adaptées à vos besoins.
+                J'acquiert en ce moments de nouvelles compétences en{' '}
+                <strong>création de sites e-commerce</strong> et d'autres
+                variétés de sites web. Je suis déterminé à me perfectionner
+                continuellement dans le domaine du développement web afin de
+                pouvoir offrir des solutions efficaces et adaptées à vos
+                besoins.
                 <br />
                 <br />
-                Si vous cherchez à créer un site web vitrine ou un portfolio
-                pour votre entreprise ou votre projet personnel, ou si vous avez
-                besoin d'une application backend pour votre entreprise, je suis
-                disponible pour travailler avec vous dès maintenant.
+                Si vous cherchez à créer un <strong>site web vitrine</strong> ou
+                un <strong>portfolio</strong> pour votre entreprise ou votre
+                projet personnel, ou si vous avez besoin d'une{' '}
+                <strong>application backend</strong> pour votre entreprise, je
+                suis disponible pour travailler avec vous dès maintenant.
               </Paragraph>
               <StatistiquesContainer className="row">
                 {statistiquesElements.map(({ id, value, text }) => (

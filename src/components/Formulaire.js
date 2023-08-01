@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { formulaireElements } from '../data'
 import {
   FormulaireContext,
@@ -8,9 +8,13 @@ import {
 import Loader from '../untils/Loader'
 import styled from 'styled-components'
 import { backgroundColor } from '../untils/colors'
+import { police } from '../untils/police'
 
 const FormulaireStyled = styled.form`
-  font-family: 'Open Sans', sans-serif;
+  font-family: ${police.second};
+  .none {
+    color: red;
+  }
 `
 
 const Input = styled.input`
@@ -43,6 +47,10 @@ const Textarea = styled.textarea`
   }
 `
 
+const FeedbackStyled = styled.h5`
+  font-size: 1em;
+`
+
 function Formulaire() {
   const { isDataLoading, toggleIsDataLoading } = useContext(LoadingContext)
 
@@ -59,13 +67,13 @@ function Formulaire() {
   } = useContext(MessageContext)
 
   const close = () => {
-    setName(null)
-    setSubject(null)
-    setMail(null)
-    setMessage(null)
-    toggleMessage(null)
-    toggleErrorMes(null)
-    toggleCodeErr(null)
+    setName('')
+    setSubject('')
+    setMail('')
+    setMessage('')
+    toggleMessage('')
+    toggleErrorMes('')
+    toggleCodeErr('')
   }
 
   useEffect(() => {
@@ -81,10 +89,6 @@ function Formulaire() {
       toggleIsDataLoading(false)
     }, 2000)
   }
-
-  const FeedbackStyled = styled.h5`
-    font-size: 1em;
-  `
 
   const Message = () => {
     return (
@@ -160,9 +164,7 @@ function Formulaire() {
             <button
               type="submit"
               className={`btn btn-primary col-md-3 ${
-                Object.values(formulaireContent).every(
-                  (value) => value !== null
-                )
+                Object.values(formulaireContent).every((value) => value !== '')
                   ? null
                   : 'disabled'
               }`}

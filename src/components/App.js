@@ -5,7 +5,6 @@ import AboutMe from './AboutMe'
 import Portfolio from './Portfolio'
 import Skills from './Skills'
 import { backgroundColor, color } from '../untils/colors'
-import Experience from './Experience'
 import {
   FormulaireProvider,
   LevelProvider,
@@ -16,41 +15,47 @@ import {
 import Contact from './Contact'
 import Footer from './Footer'
 import Header from './Header'
+import { police } from '../untils/police'
 
-function App() {
-  const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   body{
-    font-family: 'Montserrat', sans-serif;
+    font-family:${police.main};
     background-color: ${backgroundColor.mainColor};
-color : ${color.white}
+    color : ${color.white}
   }
   `
+
+function App() {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Header />
-      <main className="row">
-        <Home />
-        <AboutMe />
-        <LevelProvider>
-          <Skills />
-        </LevelProvider>
-        <PortfolioButtonProvider>
-          <Portfolio />
-        </PortfolioButtonProvider>
-        <LoadingProvider>
+      <LoadingProvider>
+        <Header />
+        <main
+          className="scrollspy-example row"
+          data-bs-spy="scroll"
+          data-bs-target="#navId"
+          data-bs-smooth-scroll="true"
+          tabIndex="0"
+        >
+          <Home />
+          <AboutMe />
+          <LevelProvider>
+            <Skills />
+          </LevelProvider>
+          <PortfolioButtonProvider>
+            <Portfolio />
+          </PortfolioButtonProvider>
           <FormulaireProvider>
             <MessageProvider>
               <Contact />
             </MessageProvider>
           </FormulaireProvider>
-        </LoadingProvider>
-      </main>
-      <Footer />
+        </main>
+        <Footer />
+      </LoadingProvider>
     </React.Fragment>
   )
 }
 
 export default App
-
-/*    background-color : #252734;*/

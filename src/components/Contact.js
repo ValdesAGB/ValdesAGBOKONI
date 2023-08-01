@@ -5,29 +5,29 @@ import Formulaire from './Formulaire'
 import Coordonnees from './Coordonnees'
 import { Networks } from '../data'
 
+const ContactStyled = styled.section`
+  padding-top: 20%;
+  padding-bottom: 20%;
+
+  @media (min-width: 768px) {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+`
+
+const Title = styled.h2`
+  font-weight: 800;
+`
+
+const Paragraph = styled.p`
+  color: ${color.gris};
+`
+
 function Contact() {
-  const ContactStyled = styled.section`
-    @media (min-width: 320px) {
-      padding-top: 20%;
-      padding-bottom: 20%;
-    }
-    @media (min-width: 768px) {
-      padding-top: 10%;
-      padding-bottom: 10%;
-    }
-    @media (min-width: 1024px) {
-      padding-top: 5%;
-      padding-bottom: 5%;
-    }
-  `
-
-  const Title = styled.h2`
-    font-weight: 800;
-  `
-
-  const Paragraph = styled.p`
-    color: ${color.gris};
-  `
   return (
     <React.Fragment>
       <ContactStyled id="contact">

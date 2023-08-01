@@ -33,10 +33,10 @@ export const LevelProvider = ({ children }) => {
 
 export const FormulaireContext = createContext()
 export const FormulaireProvider = ({ children }) => {
-  const [name, setName] = useState(null)
-  const [subject, setSubject] = useState(null)
-  const [mail, setMail] = useState(null)
-  const [message, setMessage] = useState(null)
+  const [name, setName] = useState('')
+  const [subject, setSubject] = useState('')
+  const [mail, setMail] = useState('')
+  const [message, setMessage] = useState('')
   const formulaireContent = {
     name,
     subject,

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import styled from 'styled-components'
 import { backgroundColor, color } from '../untils/colors'
 import { LevelContext } from '../untils/context'
@@ -9,7 +9,7 @@ function ProgressBar({ progress }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop
+        window.scrollY || document.documentElement.scrollTop
       const windowHeight = window.innerHeight
       const scrollHeight = document.documentElement.scrollHeight - windowHeight
 
@@ -57,7 +57,7 @@ const StyledProgressBar = styled.div`
   @media (min-width: 768px) {
     margin-bottom: 5%;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     margin-bottom: 4%;
   }
 `
@@ -68,20 +68,20 @@ const Progress = styled.div`
   background-color: ${color.primary};
   border-radius: 10px;
   position: relative;
-  transition: width 2s ease-in-out;
+  transition: all 2s ease-in-out;
 `
 
 const Tooltip = styled.span`
   position: absolute;
   bottom: calc(100% + 10px);
   transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
+  background-color: ${backgroundColor.tooltipBgColor};
+  color: ${color.white};
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 12px;
   white-space: nowrap;
-
+  left: 95%;
   &::before {
     content: '';
     position: absolute;
@@ -102,9 +102,6 @@ const Tooltip = styled.span`
     border-style: solid;
     border-color: #333 transparent;
     border-width: 4px 4px 0 4px;
-  }
-  @media (min-width: 320px) {
-    left: 95%;
   }
 `
 
