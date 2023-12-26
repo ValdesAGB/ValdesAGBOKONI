@@ -25,9 +25,9 @@ export const navigationElements = [
   },
 
   {
-    id: 'abouteMe',
+    id: 'about',
     title: 'A Propos',
-    href: '#about-me',
+    href: '#about',
   },
 
   {
@@ -226,7 +226,7 @@ export const portfolioElements = [
     type: 'Portfolio',
   },
 
-  {
+  /*{
     id: 'Votre-LOGO',
     title: 'Design agency',
     link: 'https://site-vitrine-multipage.valdesagbokoni.com/',
@@ -263,7 +263,8 @@ export const portfolioElements = [
       "MoonStore, est un projet personnel: un site e-commerce minimaliste. Je me suis plus concentré sur le backend que sur l'aspect visuel, pour évaluer mes aptitudes avec React Js.",
     cover: Moon1,
     type: 'Site e-commerce',
-  },
+  },*/
+
   {
     id: 'vitrine-design',
     title: 'SMMA agency',
@@ -276,7 +277,7 @@ export const portfolioElements = [
 
   {
     id: 'rano',
-    title: 'RANO',
+    title: 'Rano',
     link: 'https://rano.valdesagbokoni.com/',
     description:
       "Ce projet est un site onepage/landing page dédié à la présentation d'une nouvelle application mobile. Avec un design moderne et attrayant, j'ai mis en avant les fonctionnalités uniques de cette application et les avantages qu'elle offre. Le site offre une expérience immersive avec des visuels captivants, des animations fluides et des informations claires pour attirer l'attention des visiteurs.",
@@ -286,11 +287,10 @@ export const portfolioElements = [
 
   {
     id: 'lana',
-    title: 'LANA',
+    title: 'Lana',
     link: 'https://lana.valdesagbokoni.com/',
     description:
       "Découvrez un site vitrine captivant conçu spécialement pour les passionnés de l'art visuel. Présentant le travail exceptionnel d'un talentueux artiste visuel ( fictif ), ce site est une vitrine numérique mettant en avant sa créativité, son expertise et son style unique. Chaque élément visuel est soigneusement sélectionné pour évoquer des émotions et captiver votre imagination.",
-
     cover: lana,
     type: 'Site vitrine',
   },
@@ -306,7 +306,7 @@ export const portfolioElements = [
     type: 'Portfolio',
   },
 
-  {
+  /*{
     id: 'La-Maison-Jungle',
     title: 'La maison jungle',
     link: 'https://lmj.valdesagbokoni.com/',
@@ -314,7 +314,7 @@ export const portfolioElements = [
       "Ce projet a été réalisé avec les mêmes objectifs que MoonStore, à la différence près qu'il est niché dans la vente de plante.",
     cover: LMJ1,
     type: 'Site e-commerce',
-  },
+  },*/
 
   {
     id: 'trustful',

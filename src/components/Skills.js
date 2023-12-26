@@ -7,17 +7,8 @@ import { police } from '../untils/police'
 
 const SkillsStyled = styled.section`
   color: ${color.white};
-  padding-top: 20%;
-  padding-bottom: 20%;
-
-  @media (min-width: 768px) {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  @media (min-width: 1200px) {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
+  padding-top: 80px;
+  padding-bottom: 80px;
 `
 
 const Title = styled.h2`
@@ -35,15 +26,7 @@ const Skill = styled.div`
   h6 {
     font-weight: 600;
   }
-  @media (min-width: 320px) {
-    margin-top: 20%;
-  }
-  @media (min-width: 768px) {
-    margin-top: 8%;
-  }
-  @media (min-width: 1200px) {
-    margin-top: 5%;
-  }
+  margin-top: 50px;
 `
 
 function Skills() {

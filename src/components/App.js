@@ -31,13 +31,7 @@ function App() {
       <GlobalStyle />
       <LoadingProvider>
         <Header />
-        <main
-          className="scrollspy-example row"
-          data-bs-spy="scroll"
-          data-bs-target="#navId"
-          data-bs-smooth-scroll="true"
-          tabIndex="0"
-        >
+        <main className="row">
           <Home />
           <AboutMe />
           <LevelProvider>

@@ -5,18 +5,8 @@ import styled from 'styled-components'
 
 const FooterStyled = styled.footer`
   background-color: ${backgroundColor.secondColor};
-
-  padding-top: 5%;
-  padding-bottom: 5%;
-
-  @media (min-width: 1200px) {
-    padding-top: 3%;
-    padding-bottom: 2%;
-  }
-  @media (min-width: 1400px) {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
+  padding-top: 40px;
+  padding-bottom: 20px;
 `
 
 const MyName = styled.div`
@@ -34,12 +24,15 @@ const MyName = styled.div`
     padding: 3%;
     border-radius: 5px;
   }
+`
 
-  @media (min-width: 320px) {
-    margin: 6% 0 8% 0;
-  }
+const NetworksContainer = styled.div`
+  margin-top: 20px;
+  margin-bottom: 20px;
+
   @media (min-width: 768px) {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 `
 
@@ -56,15 +49,6 @@ const Icone = styled.i`
   }
 `
 
-const NetworksContainer = styled.div`
-  @media (min-width: 320px) {
-    margin-bottom: 6%;
-  }
-  @media (min-width: 768px) {
-    margin: 0;
-  }
-`
-
 const date = new Date()
 
 const Copyright = styled.div`
@@ -74,11 +58,8 @@ const Copyright = styled.div`
     font-weight: 100;
   }
 
-  @media (min-width: 320px) {
-    margin: 0;
-  }
   @media (min-width: 768px) {
-    margin: 5% 0 0% 0;
+    margin-top: 40px;
   }
   @media (min-width: 2560px) {
     margin: 3% 0 0% 0;

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import Typewriter from 'typewriter-effect'
 import { typerwriterElements } from '../data'
 import { backgroundColor, color } from '../untils/colors'
@@ -9,27 +8,24 @@ import { police } from '../untils/police'
 const HomeStyled = styled.section`
   color: ${color.white};
 
-  @media (min-width: 320px) {
-    padding-top: 45%;
-    padding-bottom: 20%;
-  }
+  padding-top: 140px;
+  padding-bottom: 50px;
 
   @media (min-width: 576px) {
-    padding-top: 25%;
+    padding-top: 160px;
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 110px;
   }
 
   @media (min-width: 992px) {
-    padding-bottom: 25%;
+    padding-top: 180px;
   }
 
-  @media (min-width: 1360px) {
-    padding-top: 14%;
-    padding-bottom: 14%;
-  }
-
-  @media (min-width: 1400px) {
-    padding-top: 28%;
-    padding-bottom: 28%;
+  @media (min-width: 1200px) {
+    padding-top: 225px;
+    padding-bottom: 200px;
   }
 `
 
@@ -85,10 +81,9 @@ const Button = styled.div`
     color: ${color.white};
     font-weight: 600;
 
-    @media (min-width: 320px) {
-      padding: 3% 5% 4% 5%;
-      margin-bottom: 5%;
-    }
+    padding: 3% 5% 4% 5%;
+    margin-bottom: 5%;
+
     @media (min-width: 576px) {
       padding: 2% 4% 3% 4%;
       margin-bottom: 3%;
@@ -109,9 +104,8 @@ const Button = styled.div`
     background: ${backgroundColor.portfolioBtnBgColor};
     font-weight: 600;
 
-    @media (min-width: 320px) {
-      padding: 3% 5% 4% 5%;
-    }
+    padding: 3% 5% 4% 5%;
+
     @media (min-width: 576px) {
       padding: 2% 4% 3% 4%;
     }
@@ -154,7 +148,7 @@ function Home() {
                 </Paragraph>
                 <Button className="row justify-content-center">
                   <a
-                    href="#about-me"
+                    href="#about"
                     className="btn about col-10 col-md-4 col-lg-3"
                   >
                     A propos de moi

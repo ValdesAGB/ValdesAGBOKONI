@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { navigationElements } from '../data'
 import { backgroundColor, color } from '../untils/colors'
 import { police } from '../untils/police'
-import ScrollIntoView from 'react-scroll-into-view'
 
 const MyName = styled.div`
   a {
@@ -42,6 +41,13 @@ const Icone = styled.i`
     font-size: 3em;
   }
 `
+const List = styled.ul`
+  @media (max-width: 1199px) {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+`
+
 const ListItemsLink = styled.a`
   color: ${(props) =>
     props.ids !== 'accueil' ? color.white : color.activeMenuLinkColor};
@@ -60,11 +66,6 @@ const ListItemsLink = styled.a`
     color: ${(props) =>
       props.ids !== 'accueil' ? color.aboutMeColor : color.activeMenuLinkColor};
   }
-
-  @media (max-width: 1199px) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 `
 
 function Header() {
@@ -82,6 +83,57 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const [headerHeight, setHeaderHeight] = useState(20) // Hauteur par défaut pour les grands écrans
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    // Fonction pour mettre à jour la hauteur de l'en-tête en fonction de la taille de l'écran
+    const updateHeaderHeight = () => {
+      const screenWidth = window.innerWidth
+      setWindowWidth(screenWidth) // Met à jour la largeur de l'écran dans l'état
+    }
+
+    // Ajoutez un écouteur d'événement pour détecter les changements de taille d'écran
+    window.addEventListener('resize', updateHeaderHeight)
+
+    // Nettoyage : supprimez l'écouteur lors de la suppression du composant
+    return () => {
+      window.removeEventListener('resize', updateHeaderHeight)
+    }
+  }, [])
+
+  useEffect(() => {
+    // Met à jour la hauteur de l'en-tête en fonction de la largeur de l'écran actuelle
+    if (windowWidth < 992) {
+      setHeaderHeight(80)
+    } else {
+      setHeaderHeight(120)
+    }
+  }, [windowWidth])
+
+  const handleClick = (event, targetId, targetHref) => {
+    event.preventDefault()
+
+    if (targetHref === '#') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
+    } else {
+      const targetElement = document.getElementById(targetId)
+
+      if (targetElement) {
+        const elementPosition = targetElement.getBoundingClientRect().top
+        const offsetPosition = elementPosition - headerHeight
+
+        window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth',
+        })
+      }
+    }
+  }
+
   const Navigation = styled.section`
     background-color: ${isAtTop
       ? backgroundColor.mainColor
@@ -93,21 +145,16 @@ function Header() {
     z-index: 3;
     width: 100%;
 
-    @media (min-width: 320px) {
-      padding: 8% 0;
-      margin-bottom: 3%;
-    }
+    padding: 8% 0;
+
     @media (min-width: 425px) {
-      padding: 5% 0 5% 0;
-      margin-bottom: 2%;
+      padding: 5% 0;
     }
     @media (min-width: 768px) {
       padding: 3% 0 3% 0;
-      margin-bottom: 1%;
     }
     @media (min-width: 1200px) {
       padding: 2% 0 2% 0;
-      margin-bottom: 0%;
     }
   `
 
@@ -118,7 +165,7 @@ function Header() {
           <div className="container">
             <nav className="row navbar navbar-expand-xl">
               <div className="container-fluid">
-                <div className="navbar-brand col-xl-7 col-xxl-8">
+                <div className="navbar-brand col-xl-8 col-xxl-8">
                   <MyName className="col-md">
                     <a href="/">
                       <span className="last d-none d-md-inline">AGBOKONI</span>{' '}
@@ -137,22 +184,23 @@ function Header() {
                 />
 
                 <div
-                  className="collapse navbar-collapse"
+                  className="collapse navbar-collapse col justify-content-end"
                   id="navbarSupportedContent"
                 >
-                  <ul className="navbar-nav">
+                  <List className="navbar-nav">
                     {navigationElements.map(({ id, title, href }) => (
                       <li className="nav-item" key={id}>
                         <ListItemsLink
                           ids={id}
-                          className="nav-link"
+                          className={`nav-link ${id}`}
                           href={href}
+                          onClick={(e) => handleClick(e, id, href)}
                         >
                           {title}
                         </ListItemsLink>
                       </li>
                     ))}
-                  </ul>
+                  </List>
                 </div>
               </div>
             </nav>

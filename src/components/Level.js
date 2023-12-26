@@ -47,10 +47,10 @@ const StyledProgressBar = styled.div`
   background-color: ${backgroundColor.secondColor};
   border-radius: 10px;
   margin-bottom: 5%;
-  @media (min-width: 320px) {
-    position: relative;
-    margin-bottom: 10%;
-  }
+
+  position: relative;
+  margin-bottom: 10%;
+
   @media (min-width: 425px) {
     margin-bottom: 8%;
   }

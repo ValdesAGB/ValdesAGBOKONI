@@ -6,17 +6,8 @@ import Coordonnees from './Coordonnees'
 import { Networks } from '../data'
 
 const ContactStyled = styled.section`
-  padding-top: 20%;
-  padding-bottom: 20%;
-
-  @media (min-width: 768px) {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  @media (min-width: 1200px) {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
+  padding-top: 80px;
+  padding-bottom: 80px;
 `
 
 const Title = styled.h2`
@@ -49,6 +40,7 @@ function Contact() {
                 />
               ))}
             </div>
+
             <div className="col-md">
               <Formulaire />
             </div>

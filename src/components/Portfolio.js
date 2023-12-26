@@ -8,17 +8,8 @@ import { backgroundColor } from '../untils/colors'
 
 const PortfolioStyled = styled.section`
   background-color: ${backgroundColor.secondColor};
-  padding-top: 20%;
-  padding-bottom: 20%;
-
-  @media (min-width: 768px) {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  @media (min-width: 1200px) {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
+  padding-top: 80px;
+  padding-bottom: 50px;
 `
 
 const Title = styled.h2`

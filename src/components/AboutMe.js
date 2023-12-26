@@ -8,17 +8,38 @@ import { police } from '../untils/police'
 const AbouteMeStyled = styled.section`
   color: ${color.aboutMeColor};
   background-color: ${backgroundColor.secondColor};
-  @media (min-width: 320px) {
-    padding-top: 20%;
-    padding-bottom: 20%;
+
+  padding: 80px 0;
+`
+
+const Content = styled.div`
+  .paragraph1 {
+    @media (min-width: 320px) {
+      font-size: 1.2em;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.3em;
+    }
+    @media (min-width: 992px) {
+      font-size: 1.1em;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.3em;
+    }
   }
-  @media (min-width: 768px) {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-  @media (min-width: 992px) {
-    padding-top: 0%;
-    padding-bottom: 0%;
+  .paragraph2 {
+    @media (min-width: 320px) {
+      font-size: 1em;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.1em;
+    }
+    @media (min-width: 992px) {
+      font-size: 1em;
+    }
+    @media (min-width: 1400px) {
+      font-size: 1.1em;
+    }
   }
 `
 
@@ -51,37 +72,6 @@ const Paragraph = styled.p`
   font-family: ${police.second};
   text-align: justify;
 `
-const Content = styled.div`
-  padding: 10% 0;
-  .paragraph1 {
-    @media (min-width: 320px) {
-      font-size: 1.2em;
-    }
-    @media (min-width: 768px) {
-      font-size: 1.3em;
-    }
-    @media (min-width: 992px) {
-      font-size: 1.1em;
-    }
-    @media (min-width: 1400px) {
-      font-size: 1.3em;
-    }
-  }
-  .paragraph2 {
-    @media (min-width: 320px) {
-      font-size: 1em;
-    }
-    @media (min-width: 768px) {
-      font-size: 1.1em;
-    }
-    @media (min-width: 992px) {
-      font-size: 1em;
-    }
-    @media (min-width: 1400px) {
-      font-size: 1.1em;
-    }
-  }
-`
 
 const StatistiquesContainer = styled.div`
   margin-top: 10%;
@@ -104,7 +94,7 @@ const StatistiquesContainer = styled.div`
 function AboutMe() {
   return (
     <React.Fragment>
-      <AbouteMeStyled id="about-me">
+      <AbouteMeStyled id="about">
         <Content className="container">
           <div className="row justify-content-center">
             <CoverContainer className="col-12 col-sm-10 col-lg-8 col-xl-4">
