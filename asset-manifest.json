@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.js": "/ValdesAGBOKONI/static/js/main.a44bb17d.js",
+    "main.js": "/ValdesAGBOKONI/static/js/main.67ee64ba.js",
     "static/media/MyFreeWorks1.PNG": "/ValdesAGBOKONI/static/media/MyFreeWorks1.76789b2add1b1b3beedc.PNG",
     "static/media/legal.png": "/ValdesAGBOKONI/static/media/legal.ff436a9df90908915a86.png",
     "static/media/Moon1.PNG": "/ValdesAGBOKONI/static/media/Moon1.a8a13b44a5dc207e017e.PNG",
+    "static/media/gilbard.png": "/ValdesAGBOKONI/static/media/gilbard.f2237349249e680bc49e.png",
     "static/media/rano.png": "/ValdesAGBOKONI/static/media/rano.c6c7e94d4e3717807d54.png",
     "static/media/trustful.PNG": "/ValdesAGBOKONI/static/media/trustful.665441e997769281c372.PNG",
     "static/media/lana.png": "/ValdesAGBOKONI/static/media/lana.7d8e0faf5c22d0de95d1.png",
@@ -19,9 +20,9 @@
     "static/media/Me.jpeg": "/ValdesAGBOKONI/static/media/Me.beaed926d006b9d8c206.jpeg",
     "static/media/e-bookyo.png": "/ValdesAGBOKONI/static/media/e-bookyo.e1ddf0faaf0994747eb9.png",
     "index.html": "/ValdesAGBOKONI/index.html",
-    "main.a44bb17d.js.map": "/ValdesAGBOKONI/static/js/main.a44bb17d.js.map"
+    "main.67ee64ba.js.map": "/ValdesAGBOKONI/static/js/main.67ee64ba.js.map"
   },
   "entrypoints": [
-    "static/js/main.a44bb17d.js"
+    "static/js/main.67ee64ba.js"
   ]
 }
